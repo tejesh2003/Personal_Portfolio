@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/tejesh2003/Personal_Portfolio.git/static/css/main.5161ced9.css",
-    "main.js": "/tejesh2003/Personal_Portfolio.git/static/js/main.d7fd5b2c.js",
-    "static/media/contactImg.png": "/tejesh2003/Personal_Portfolio.git/static/media/contactImg.8ddfbfd11798f881db54.png",
-    "index.html": "/tejesh2003/Personal_Portfolio.git/index.html",
-    "main.5161ced9.css.map": "/tejesh2003/Personal_Portfolio.git/static/css/main.5161ced9.css.map",
-    "main.d7fd5b2c.js.map": "/tejesh2003/Personal_Portfolio.git/static/js/main.d7fd5b2c.js.map"
+    "main.css": "/Personal_Portfolio/static/css/main.5161ced9.css",
+    "main.js": "/Personal_Portfolio/static/js/main.f66bec02.js",
+    "static/media/contactImg.png": "/Personal_Portfolio/static/media/contactImg.8ddfbfd11798f881db54.png",
+    "index.html": "/Personal_Portfolio/index.html",
+    "main.5161ced9.css.map": "/Personal_Portfolio/static/css/main.5161ced9.css.map",
+    "main.f66bec02.js.map": "/Personal_Portfolio/static/js/main.f66bec02.js.map"
   },
   "entrypoints": [
     "static/css/main.5161ced9.css",
-    "static/js/main.d7fd5b2c.js"
+    "static/js/main.f66bec02.js"
   ]
 }

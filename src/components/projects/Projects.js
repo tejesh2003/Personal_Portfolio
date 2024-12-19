@@ -21,7 +21,7 @@ const Projects = () => {
             – Features alerts for important events in the portfolios.
             – Designed with Chart.js for visual representation of data.
             – Set to be deployed on AWS.`}
-          githubLink={null}  // No GitHub link for the Investment Tracker
+          githubLink="https://github.com/FinSage-Investment-Tracker/FinSage"
           techStack={['JavaScript', 'React.js','Node.js','Express.js','MongoDb','Bootstrap', 'Chart.js', 'Tailwind', 'AWS']}
         />
 
@@ -53,7 +53,7 @@ const Projects = () => {
             – Managed version control and deployed the site on GitHub Pages for easy access.
             – Included 'About Me', 'Skills', 'Projects', and 'Contact' sections to showcase my work and experience.`}
   
-          githubLink={null}  // Replace with your actual GitHub repo link
+          githubLink="https://github.com/tejesh2003/Personal_Portfolio/tree/gh-pages"  // Replace with your actual GitHub repo link
           techStack={['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'Git']}
         />
 

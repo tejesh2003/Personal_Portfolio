@@ -5,7 +5,7 @@ import ProfileCard from "./ProfileCard";  // Import ProfileCard
 const Profiles = () => {
   // Function to handle the resume download
   const downloadResume = () => {
-    const resumeLink = "https://drive.google.com/uc?export=download&id=1aUzPx2Pw3oE64auF8usmJI8hQ_e9MlIU";
+    const resumeLink = "https://drive.google.com/uc?export=download&id=1nGCD7Etr4n03uWGxQWZOL4aoMSEFHpcK";
     const link = document.createElement("a");
     link.href = resumeLink;
     link.download = "Your_Resume.pdf"; // You can set a custom name here

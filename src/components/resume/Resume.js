@@ -4,25 +4,27 @@ import Education from './Education';
 import Skills from './Skills';
 import Profiles from './Profiles';
 import Achievement from './Achievement';
-
+import Experience from './Experience';
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
    const [skillData, setSkillData] = useState(false);
    const [achievementData, setAchievementData] = useState(false);
    const [ProfileData, setProfileData] = useState(false);
+   const [experienceData, setExperienceData] = useState(false);
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
         <Title des="My Resume" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5">
           <li
             onClick={() =>
               setEducationData(true) &
               setSkillData(false) &
               setProfileData(false) &
-              setAchievementData(false)
+              setAchievementData(false)&
+              setExperienceData(false)
             }
             className={`${
               educationData
@@ -37,7 +39,8 @@ const Resume = () => {
               setEducationData(false) &
               setSkillData(true) &
               setProfileData(false) &
-              setAchievementData(false)
+              setAchievementData(false)&
+              setExperienceData(false)
             }
             className={`${
               skillData ? "border-designColor rounded-lg" : "border-transparent"
@@ -50,7 +53,8 @@ const Resume = () => {
               setEducationData(false) &
               setSkillData(false) &
               setProfileData(true) &
-              setAchievementData(false)
+              setAchievementData(false)&
+              setExperienceData(false)
             }
             className={`${
               ProfileData
@@ -65,7 +69,8 @@ const Resume = () => {
               setEducationData(false) &
               setSkillData(false) &
               setProfileData(false) &
-              setAchievementData(true)
+              setAchievementData(true)&
+              setExperienceData(false)
             }
             className={`${
               achievementData
@@ -75,6 +80,22 @@ const Resume = () => {
           >
             Achievements
           </li>
+          <li
+            onClick={() =>
+              setEducationData(false) &
+              setSkillData(false) &
+              setProfileData(false) &
+              setAchievementData(false)&
+              setExperienceData(true)
+            }
+            className={`${
+              experienceData
+                ? "border-designColor rounded-lg"
+                : "border-transparent"
+            } resumeLi`}
+          >
+            Experience
+          </li>
           
         </ul>
       </div>
@@ -82,6 +103,7 @@ const Resume = () => {
       {skillData && <Skills />}
       {ProfileData && <Profiles />}
       {achievementData && <Achievement />}
+      {experienceData && <Experience />}
     </section>
   );
 }

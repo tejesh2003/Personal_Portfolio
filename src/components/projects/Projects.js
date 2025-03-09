@@ -8,12 +8,11 @@ const Projects = () => {
       <div className="flex justify-center items-center text-center">
         <Title des="My Projects" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <div className="flex flex-wrap justify-center gap-6 xl:gap-14">
         <ProjectsCard
           title="Investment Tracker"
           shortDes="A real-time investment tracker with multiple portfolios and integrated news. (Ongoing)"
-          fullDes={`
-            – Works with real-time data using multiple APIs.
+          fullDes={`– Works with real-time data using multiple APIs.
             – Supports multiple portfolios, including stocks, mutual funds, SIP, and gold within a single portfolio.
             – Provides general news and stock-specific news.
             – Includes a basic chatbot for basic queries.
@@ -22,7 +21,7 @@ const Projects = () => {
             – Designed with Chart.js for visual representation of data.
             – Set to be deployed on AWS.`}
           githubLink="https://github.com/FinSage-Investment-Tracker/FinSage"
-          techStack={['JavaScript', 'React.js','Node.js','Express.js','MongoDb','Bootstrap', 'Chart.js', 'Tailwind', 'AWS']}
+          techStack={['JavaScript', 'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap', 'Chart.js', 'Tailwind']}
         />
 
         <ProjectsCard
@@ -41,10 +40,10 @@ const Projects = () => {
           fullDes={`– Designed a news aggregator web app containing infinite scrolling, search functionality, and dark mode.
           – Leveraged the NewsAPI to fetch top headlines of multiple countries separately.
           – Integrated error handling, retry logic, and local storage for reliable data fetching.`}
-          githubLink="https://github.com/tejesh2003/News-Monkey" // Replace with your actual GitHub repo link
+          githubLink="https://github.com/tejesh2003/News-Monkey"
           techStack={['React', 'CSS', 'Bootstrap']}
         />
-        
+
         <ProjectsCard
           title="Personal Portfolio Website"
           shortDes="A personal portfolio website to showcase my skills, projects, and experience."
@@ -52,8 +51,7 @@ const Projects = () => {
             – Integrated mobile-first design and smooth animations with Tailwind CSS.
             – Managed version control and deployed the site on GitHub Pages for easy access.
             – Included 'About Me', 'Skills', 'Projects', and 'Contact' sections to showcase my work and experience.`}
-  
-          githubLink="https://github.com/tejesh2003/Personal_Portfolio/tree/gh-pages"  // Replace with your actual GitHub repo link
+          githubLink="https://github.com/tejesh2003/Personal_Portfolio/tree/gh-pages"
           techStack={['HTML', 'CSS', 'JavaScript', 'React.js', 'Tailwind CSS', 'Git']}
         />
 
@@ -63,7 +61,7 @@ const Projects = () => {
           fullDes={`– Developed a Multi Disease Prediction system employing Logistic Regression, KNN, and Naïve Bayes models for each disease.
           – Designed a user-friendly web app for inputting patient vitals and predicting outcomes.
           – Achieved high prediction accuracies: 97% for chronic kidney disease (Naïve Bayes), 81% for Diabetes, and 86% for heart disease (Logistic Regression).`}
-          githubLink="https://github.com/tejesh2003/Multiple-Disease-Prediction-System" // Replace with your actual GitHub repo link
+          githubLink="https://github.com/tejesh2003/Multiple-Disease-Prediction-System"
           techStack={['Data Visualization', 'Multiple Models Deployment', 'Streamlit']}
         />
       </div>

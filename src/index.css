@@ -41,8 +41,16 @@
   }
   
   /* If you want to apply padding to your content */
-  body {
-
+  html, body {
     background-color: #212428;
+    width: -webkit-fill-available !important;
+  }
+  
+  html {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   

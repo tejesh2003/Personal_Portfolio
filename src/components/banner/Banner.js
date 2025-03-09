@@ -21,8 +21,6 @@ const Banner = () => {
     >
       {/* Banner content container */}
       <div className="w-full flex flex-col gap-20 mt-10">
-        {" "}
-        {/* Added mt-10 here */}
         <div className="flex flex-col gap-5">
           <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
           <div className="flex items-center">
@@ -33,31 +31,27 @@ const Banner = () => {
                 <span className="text-designColor capitalize">Tejesh</span>
               </h1>
             </div>
-            {/* Right Div for Typewriter Effect */}
-            <div className="ml-4">
-              <h2 className="text-4xl font-bold text-white">
-                a <span>{text}</span>
-                <Cursor
-                  cursorBlinking="false"
-                  cursorStyle="|"
-                  cursorColor="#ff014f"
-                />
-              </h2>
-            </div>
+          </div>
+          <div className="ml-4">
+            <h2 className="text-4xl font-bold text-white">
+              a <span>{text}</span>
+              <Cursor
+                cursorBlinking="false"
+                cursorStyle="|"
+                cursorColor="#ff014f"
+              />
+            </h2>
           </div>
         </div>
-        {/* Description section with the background style from previous example */}
-        <div className="w-[70%] bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne flex justify-center items-center mx-auto mt-6 p-8 min-h-[220px]">
+
+        {/* Description section - Desktop remains same, Mobile view optimized */}
+        <div className="w-[70%] bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg shadow-shadowOne flex justify-center items-center mx-auto mt-6 p-8 min-h-[220px] 
+        sm:w-[90%] sm:p-4 sm:mt-3">
           <p className="text-lg font-light leading-7 text-gray-200 tracking-wide text-center">
-            With a strong foundation in Data Structures and Algorithms, and
-            experience as a full-stack developer, there's a keen interest in
-            building scalable, efficient applications. Knowledgeable in the MERN
-            stack, along with a solid grasp of web development principles.
-            Skilled in backend and frontend integration, and well-versed in
-            creating responsive, user-friendly interfaces. Also enthusiastic
-            about expanding expertise in cloud technologies, with a foundational
-            understanding of AWS and an eagerness to dive deeper into
-            cloud-based solutions and services.
+            Skilled in Data Structures and Algorithms with proven full-stack development experience. 
+            Proficient in the MERN stack, backend-front integration, and building scalable, efficient applications. 
+            Strong foundation in cloud technologies with a keen focus on AWS. Open to learning and adapting 
+            to new technologies to enhance development efficiency and stay updated with industry trends.
           </p>
         </div>
       </div>

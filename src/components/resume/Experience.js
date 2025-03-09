@@ -14,7 +14,7 @@ const Experience = () => {
           <ResumeCard
             title="Software Engineer Intern"
             subTitle="at Emoha"
-            result="Dec 16th 2024 - present"
+            result="Dec 2024 - present"
             des="A Software Engineer Intern supports software development by writing code and contributing to real-world projects, gaining hands-on experience in programming and development practices."
           />
         </div>

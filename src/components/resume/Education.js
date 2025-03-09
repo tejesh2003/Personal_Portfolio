@@ -15,7 +15,7 @@ const Education = () => {
           <ResumeCard
             title="B.Tech-Computer Science"
             subTitle="Indian Institute of Information Technology Nagpur (2021-present)"
-            result="7.7/10"
+            result="7.84/10"
             des="Completed a comprehensive Bachelor's degree in Computer Science, gaining strong foundations in data structures, algorithms, software development, and web technologies."
           />
           <ResumeCard

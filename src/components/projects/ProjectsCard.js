@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs"; // Add the internet icon
 import { motion, AnimatePresence } from "framer-motion";
-
-const ProjectsCard = ({ title, shortDes, fullDes, githubLink, techStack }) => {
+import { IoMdGlobe } from "react-icons/io";
+const ProjectsCard = ({
+  title,
+  shortDes,
+  fullDes,
+  githubLink,
+  techStack,
+  websiteLink,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -36,15 +43,29 @@ const ProjectsCard = ({ title, shortDes, fullDes, githubLink, techStack }) => {
             <h3 className="text-xl font-semibold text-designColor capitalize">
               {title}
             </h3>
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-designColor transition"
-              onClick={(e) => e.stopPropagation()} // Prevent modal from opening when clicking GitHub
-            >
-              <BsGithub className="text-xl" />
-            </a>
+            <div className="flex items-center gap-4">
+              {title === "DevTinder" && websiteLink && (
+                <a
+                  href={websiteLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-designColor transition"
+                  onClick={(e) => e.stopPropagation()} // Prevent modal from opening when clicking Website
+                >
+                  <IoMdGlobe size={24} className="text-xl" />
+                </a>
+              )}
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-designColor transition"
+                onClick={(e) => e.stopPropagation()} // Prevent modal from opening when clicking GitHub
+              >
+                <BsGithub className="text-xl" />
+              </a>
+              {/* Conditionally render website link and internet icon for DevTinder */}
+            </div>
           </div>
 
           {/* Short Description */}
@@ -55,7 +76,10 @@ const ProjectsCard = ({ title, shortDes, fullDes, githubLink, techStack }) => {
         {techStack.length > 0 && (
           <div className="flex flex-wrap gap-2 pt-2 mt-auto">
             {techStack.map((tech, index) => (
-              <span key={index} className="text-xs bg-gray-800 text-white px-2 py-1 rounded-full">
+              <span
+                key={index}
+                className="text-xs bg-gray-800 text-white px-2 py-1 rounded-full"
+              >
                 {tech}
               </span>
             ))}
@@ -95,7 +119,9 @@ const ProjectsCard = ({ title, shortDes, fullDes, githubLink, techStack }) => {
               {/* Full Description */}
               <div className="text-base text-gray-300 leading-relaxed">
                 {fullDes.split("\n").map((line, index) => (
-                  <p key={index} className="mb-2">{line}</p>
+                  <p key={index} className="mb-2">
+                    {line}
+                  </p>
                 ))}
               </div>
 
@@ -103,7 +129,10 @@ const ProjectsCard = ({ title, shortDes, fullDes, githubLink, techStack }) => {
               {techStack.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-4">
                   {techStack.map((tech, index) => (
-                    <span key={index} className="text-xs bg-gray-800 text-white px-2 py-1 rounded-full">
+                    <span
+                      key={index}
+                      className="text-xs bg-gray-800 text-white px-2 py-1 rounded-full"
+                    >
                       {tech}
                     </span>
                   ))}

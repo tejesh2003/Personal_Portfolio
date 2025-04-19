@@ -45,7 +45,8 @@ const Projects = () => {
     – Supports project collaboration rooms with basic chat and task board.
     – Designed with Tailwind for fast and modern UI development.
     – Backend handles secure user authentication and matchmaking logic.
-    – Used indexing in MongoDB to optimize database queries and ensure faster backend responses.`}
+    – Used indexing in MongoDB to optimize database queries and ensure faster backend responses.
+    – Deployed on AWS for scalability and reliability.`}
           githubLink="https://github.com/tejesh2003/DevTinder"
           techStack={[
             "React.js",
@@ -56,7 +57,9 @@ const Projects = () => {
             "Tailwind CSS",
             "JWT",
             "Mongoose",
+            "AWS",
           ]}
+          websiteLink="http://13.60.76.85/"
         />
 
         <ProjectsCard

@@ -34,6 +34,16 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            {/* Resume Button - Desktop */}
+            <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+              <a
+                href="https://drive.google.com/file/d/1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -66,12 +76,21 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                {/* Resume Button - Mobile */}
+                <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+                  <a
+                    href="https://drive.google.com/file/d/1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </li>
               </ul>
             </div>
           )}
         </div>
       </div>
-
       {/* Margin below navbar */}
       <div className="mt-[4rem]"></div> {/* Adjust margin size if needed */}
     </>

@@ -8,6 +8,8 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaAws,
+  FaDocker,
+  FaBitbucket,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -21,6 +23,7 @@ import {
   SiCplusplus,
   SiMysql,
   SiPostman,
+  SiTailwindcss,
 } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { BsGraphUpArrow } from "react-icons/bs";
@@ -34,6 +37,7 @@ const Skills = () => {
     { icon: FaReact, color: "text-blue-400", name: "React" },
     { icon: SiRedux, color: "text-purple-500", name: "Redux" },
     { icon: SiNextdotjs, color: "text-white", name: "Next.js" },
+    { icon: SiTailwindcss, color: "text-sky-400", name: "Tailwind CSS" },
     { icon: SiBootstrap, color: "text-purple-600", name: "Bootstrap" },
     { icon: SiAntdesign, color: "text-blue-500", name: "Ant Design" },
   ];
@@ -46,13 +50,15 @@ const Skills = () => {
   ];
 
   const toolsTech = [
+    { icon: FaAws, color: "text-yellow-600", name: "AWS" },
+    { icon: FaDocker, color: "text-blue-500", name: "Docker" },
     { icon: FaGitAlt, color: "text-red-500", name: "Git" },
+    { icon: FaBitbucket, color: "text-blue-700", name: "Bitbucket" },
     { icon: SiJirasoftware, color: "text-blue-600", name: "Jira" },
     { icon: SiCplusplus, color: "text-blue-500", name: "C++" },
     { icon: SiPython, color: "text-yellow-500", name: "Python" },
     { icon: BsGraphUpArrow, color: "text-white", name: "DSA" },
     { icon: SiPostman, color: "text-orange-500", name: "Postman" },
-    { icon: FaAws, color: "text-yellow-600", name: "AWS" },
   ];
 
   return (

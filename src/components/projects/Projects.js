@@ -80,6 +80,44 @@ const Projects = () => {
         />
 
         <ProjectsCard
+          title="DocuEmbed"
+          shortDes="A scalable pipeline to ingest, parse, and vectorize documents using Temporal.io and Milvus."
+          fullDes={`– Built an end-to-end document ingestion system using Python, Temporal.io, and Docker.
+  – Parsed documents into structured chunks using Unstructured.io and generated vector embeddings using open-source models.
+  – Stored embeddings in Milvus vector database for semantic search and efficient retrieval.
+  – Designed with modularity, async workflows (via asyncio), and fault-tolerant orchestration using Temporal workflows.
+  – Containerized the entire stack using Docker and managed services via docker-compose.`}
+          githubLink="https://github.com/tejesh2003/DocuEmbed"
+          techStack={[
+            "Python",
+            "Temporal.io",
+            "Milvus",
+            "Docker",
+            "Unstructured.io",
+          ]}
+        />
+
+        <ProjectsCard
+          title="TaskManager"
+          shortDes="A feature-rich MERN stack task management web application with advanced task operations."
+          fullDes={`– Built a full-stack task management web app using the MERN stack to streamline task handling and team coordination.
+          – Designed a responsive and clean UI using React.js and Vanilla CSS, ensuring intuitive interaction and usability.
+          – Developed a robust backend with Node.js and Express.js to support user authentication, task CRUD operations, and assignments.
+          – Integrated advanced features like task assigning, filtering, sorting, searching, editing, and status tracking.
+          – Deployed the frontend on Vercel for optimized delivery and the backend on Render for scalable server-side handling.`}
+          githubLink="https://github.com/tejesh2003/TaskManager"
+          techStack={[
+            "JavaScript",
+            "CSS",
+            "React.js",
+            "MongoDB",
+            "Node.js",
+            "Express.js",
+          ]}
+          websiteLink="https://task-manager-git-main-tejeshs-projects-72740712.vercel.app/"
+        />
+
+        <ProjectsCard
           title="News-Monkey: A News App"
           shortDes="A news aggregator web app with infinite scrolling, search functionality, and dark mode."
           fullDes={`– Designed a news aggregator web app containing infinite scrolling, search functionality, and dark mode.

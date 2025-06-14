@@ -44,7 +44,7 @@ const ProjectsCard = ({
               {title}
             </h3>
             <div className="flex items-center gap-4">
-              {title === "DevTinder" && websiteLink && (
+              {title === "TaskManager" && websiteLink && (
                 <a
                   href={websiteLink}
                   target="_blank"

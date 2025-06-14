@@ -5,9 +5,9 @@ import ProfileCard from "./ProfileCard"; // Import ProfileCard
 const Profiles = () => {
   // Resume Links
   const resumeDownloadLink =
-    "https://drive.google.com/uc?export=download&id=1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6";
+    "https://drive.google.com/uc?export=download&id=11qMQPCRqIxpAqPds75KLkancOd5WgQs1";
   const resumeViewLink =
-    "https://drive.google.com/file/d/1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6/view?usp=drive_link";
+    "https://drive.google.com/file/d/11qMQPCRqIxpAqPds75KLkancOd5WgQs1/view?usp=sharing";
 
   // Function to handle resume download
   const downloadResume = () => {

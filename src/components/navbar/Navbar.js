@@ -37,7 +37,7 @@ const Navbar = () => {
             {/* Resume Button - Desktop */}
             <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
               <a
-                href="https://drive.google.com/file/d/1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6/view?usp=drive_link"
+                href="https://drive.google.com/file/d/11qMQPCRqIxpAqPds75KLkancOd5WgQs1/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 {/* Resume Button - Mobile */}
                 <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
                   <a
-                    href="https://drive.google.com/file/d/1qTMarZPUzZ9mnmG2xYIkh6jnpkDDB-M6/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/11qMQPCRqIxpAqPds75KLkancOd5WgQs1/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

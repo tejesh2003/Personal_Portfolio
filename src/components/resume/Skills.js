@@ -1,7 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaAws } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiRedux, SiNextdotjs, SiBootstrap, SiAntdesign, SiJirasoftware, SiPython, SiCplusplus, SiMysql, SiPostman } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaAws,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiExpress,
+  SiRedux,
+  SiNextdotjs,
+  SiBootstrap,
+  SiAntdesign,
+  SiJirasoftware,
+  SiPython,
+  SiCplusplus,
+  SiMysql,
+  SiPostman,
+} from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import { BsGraphUpArrow } from "react-icons/bs";
 
 const Skills = () => {
@@ -9,6 +30,7 @@ const Skills = () => {
     { icon: FaHtml5, color: "text-orange-600", name: "HTML" },
     { icon: FaCss3Alt, color: "text-blue-500", name: "CSS" },
     { icon: FaJsSquare, color: "text-yellow-400", name: "JavaScript" },
+    { icon: SiTypescript, color: "text-blue-600", name: "TypeScript" },
     { icon: FaReact, color: "text-blue-400", name: "React" },
     { icon: SiRedux, color: "text-purple-500", name: "Redux" },
     { icon: SiNextdotjs, color: "text-white", name: "Next.js" },
@@ -42,11 +64,15 @@ const Skills = () => {
       {/* Web Dev Section */}
       <div className="md:w-3/5 w-full flex flex-col justify-center gap-6">
         <div className="bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg pt-4 pb-6 px-6 flex flex-col justify-center items-center shadow-shadowOne">
-          <h3 className="text-white text-lg font-semibold border-b border-gray-600 pb-2">WEB DEV</h3>
+          <h3 className="text-white text-lg font-semibold border-b border-gray-600 pb-2">
+            WEB DEV
+          </h3>
 
           {/* FRONTEND */}
           <div className="w-full mt-3">
-            <h4 className="text-white text-md font-semibold pb-2 uppercase">FRONTEND</h4>
+            <h4 className="text-white text-md font-semibold pb-2 uppercase">
+              FRONTEND
+            </h4>
             <div className="flex flex-wrap gap-3 justify-center">
               {frontendSkills.map((skill, i) => (
                 <div
@@ -54,7 +80,9 @@ const Skills = () => {
                   className="flex items-center justify-center gap-3 border border-gray-500 rounded-lg px-4 py-2 w-auto
                   hover:shadow-md hover:shadow-red-500 transition duration-300 cursor-pointer"
                 >
-                  <skill.icon className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`} />
+                  <skill.icon
+                    className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`}
+                  />
                   <span className="text-white">{skill.name}</span>
                 </div>
               ))}
@@ -63,7 +91,9 @@ const Skills = () => {
 
           {/* BACKEND */}
           <div className="w-full mt-6">
-            <h4 className="text-white text-md font-semibold pb-2 uppercase">BACKEND</h4>
+            <h4 className="text-white text-md font-semibold pb-2 uppercase">
+              BACKEND
+            </h4>
             <div className="flex flex-wrap gap-3 justify-center">
               {backendSkills.map((skill, i) => (
                 <div
@@ -71,7 +101,9 @@ const Skills = () => {
                   className="flex items-center justify-center gap-3 border border-gray-500 rounded-lg px-4 py-2 w-auto
                   hover:shadow-md hover:shadow-red-500 transition duration-300 cursor-pointer"
                 >
-                  <skill.icon className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`} />
+                  <skill.icon
+                    className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`}
+                  />
                   <span className="text-white">{skill.name}</span>
                 </div>
               ))}
@@ -83,7 +115,9 @@ const Skills = () => {
       {/* Tools & Technologies Section */}
       <div className="md:w-3/5 w-full flex justify-center">
         <div className="bg-black bg-opacity-20 hover:bg-opacity-30 duration-300 rounded-lg pt-4 pb-6 px-6 flex flex-col justify-center items-center shadow-shadowOne w-full">
-          <h3 className="text-white text-lg font-semibold border-b border-gray-600 pb-2">TOOLS & TECHNOLOGIES</h3>
+          <h3 className="text-white text-lg font-semibold border-b border-gray-600 pb-2">
+            TOOLS & TECHNOLOGIES
+          </h3>
           <div className="flex flex-wrap gap-3 justify-center mt-3">
             {toolsTech.map((skill, i) => (
               <div
@@ -91,7 +125,9 @@ const Skills = () => {
                 className="flex items-center justify-center gap-3 border border-gray-500 rounded-lg px-4 py-2 w-auto
                 hover:shadow-md hover:shadow-red-500 transition duration-300 cursor-pointer"
               >
-                <skill.icon className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`} />
+                <skill.icon
+                  className={`w-6 h-6 md:w-8 md:h-8 ${skill.color}`}
+                />
                 <span className="text-white">{skill.name}</span>
               </div>
             ))}
